@@ -1,12 +1,42 @@
-.navbar{
-    background-color: #E2441A;
-}
 body{
     font-family: "Vazirmatn", sans-serif;
     /* font-weight: 700; */
 }
+/*-------------------------------- Navbar -----------------------*/
+.navbar{
+    background-color: #E2441A;
+}
+/*-------- Search input ------------*/
+.search-box {
+    position: relative;
+    width: 340px;
+    max-width: 400px; /* Adjust based on your design */
+}
+
+.search-box input {
+    width: 70%;
+    padding-right: 40px; /* Space for the icon */
+    border-radius: 8px;
+}
+
+.search-box svg {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #808080; /* Icon color */
+    font-size: 1.2rem;
+    pointer-events: none; /* Make sure the icon doesn't block input clicks */
+}
+nav .lang-logo{
+    margin-left: 100px;
+}
+
+
+
 .rounded-custom {
     border-radius: 25px;
+ 
 }
 .section-left {
     background-image: linear-gradient(#E45F3E, #D43714); /* Orange color for left sections */
@@ -15,16 +45,16 @@ body{
 .section-left h5{
 display: inline;
 }
-.section-left .aa{
+.section-left .left-content{
 display: flex;
 justify-content: space-between;
 width: 400px;
 padding: 30px;
 }
-.section-left .aa:nth-child(1){
+.section-left .left-content:nth-child(1){
     margin-top: 20px;
 }
-.section-left .aa:nth-child(4){
+.section-left .left-content:nth-child(4){
     margin-bottom: 300px;
 }
 .section-left .d-flex {
@@ -39,6 +69,14 @@ padding: 30px;
     display: inline-block;
     border-radius: 1rem;
     padding-right: 30px;
+}
+.pp{
+    max-width: 660px;
+    display: inline-block;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    /* padding-right: 30px;
+    margin-right: 0px; */
 }
 .rounded-custom {
     border-radius: 25px;
