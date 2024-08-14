@@ -1,7 +1,7 @@
 .navbar{
     background-color: #E2441A;
 }
-html{
+body{
     font-family: "Vazirmatn", sans-serif;
     /* font-weight: 700; */
 }
@@ -9,7 +9,7 @@ html{
     border-radius: 25px;
 }
 .section-left {
-    background-color: #ff5722; /* Orange color for left sections */
+    background-image: linear-gradient(#E45F3E, #D43714); /* Orange color for left sections */
     color: white;
 }
 .section-left h5{
@@ -28,7 +28,7 @@ padding: 30px;
     margin-bottom: 300px;
 }
 .section-left .d-flex {
-    background-color: hsl(14, 100%, 57%); /* Ensuring the container color matches the section */
+    background-image: linear-gradient(#E45F3E, #D43714);
     color: white;
 }
 .section-main img, .section-news img {
@@ -44,9 +44,9 @@ padding: 30px;
     border-radius: 25px;
 }
 .section-ads {
-    background-color: #ff5722; /* Orange color for the ad section */
+    background-color: #E2441A; /* Orange color for the ad section */
     color: white;
-    padding: 20px;
+    padding-top: 100px;
     position: relative;
     height: 100%;
 }
@@ -63,21 +63,94 @@ padding: 30px;
     width: 100%;
 }
 .section-news h5 {
-    font-size: 1rem;
+    font-size: 1.25rem;
     font-weight: bold;
 }
 .section-news p {
     font-size: 0.9rem;
 }
 .section-news .date {
-    color: red;
+    color: #E2441A;
+    font-size: 0.8rem;
+}
+.section-news .cc {
+    color: #6D6D6D;
     font-size: 0.8rem;
 }
 .title-bar {
-    background: linear-gradient(to right, #f8a5c2, #f78fb3);
+    background: linear-gradient(to right, #E45F3E00 0%, #FFB29F 100%, #E45F3E00 0%);
+    border: linear-gradient(to right, #E45F3E00 0%, #FFB29F 100%, #E45F3E 0%);
     text-align: center;
-    padding: 10px;
+    padding: 60px;
     margin-top: 20px;
     border-radius: 15px;
     color: #000;
+    width: 700px;
+}
+/* -------------------------------------------------- */
+.news-card {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.news-card img {
+    border-radius: 15px;
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+.news-card h5 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.news-card p {
+    font-size: 0.9rem;
+    color: #666;
+}
+.news-card .time-label {
+    color: red;
+    font-size: 0.8rem;
+}
+
+/* ------------------------------------------ */
+.back-button {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.ad-container {
+    background-color: #000;
+    color: white;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.ad-container h2 {
+    color: #FF5722;
+    margin: 0;
+}
+
+.ad-container .close {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.btn-red {
+    background-color: #FF5722;
+    color: white;
+    border-radius: 5px;
+    padding: 10px 20px;
+    border: none;
+    font-size: 1rem;
 }
